@@ -53,3 +53,36 @@
       <h2>Калькулятор пропорций</h2>
       <p class="section-lead">Выбери метод и впиши воду или кофе — второе значение посчитается само.</p>
 
+      <div class="calc-card">
+        <label class="field">
+          <span>Метод</span>
+          <select id="calc-method"></select>
+        </label>
+
+        <div class="calc-inputs">
+          <label class="field">
+            <span>Вода, мл</span>
+            <input type="number" id="calc-water" min="0" step="1" placeholder="300">
+          </label>
+          <span class="calc-sep">:</span>
+          <label class="field">
+            <span>Кофе, г</span>
+            <input type="number" id="calc-coffee" min="0" step="0.1" placeholder="18.8">
+          </label>
+        </div>
+
+        <p class="calc-note" id="calc-note"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Учебный проект курса «Веб-программирование». Собрано на HTML, CSS и JS, размещено через GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
