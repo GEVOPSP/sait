@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Завар. — гид по методам заваривания кофе</title>
+<meta name="description" content="Шесть способов заварить кофе дома: помол, время, пропорции и калькулятор порции.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <span class="brand">Завар.</span>
+    <nav class="nav">
+      <a href="#methods">Методы</a>
+      <a href="#calculator">Калькулятор</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <h1>Один и тот же кофе — шесть разных вкусов</h1>
+        <p class="hero-sub">Способ заваривания меняет вкус чашки сильнее, чем сорт зерна. Помол, время контакта с водой и пропорция кофе к воде — вот что на самом деле решает. Ниже — шесть методов и калькулятор, чтобы не гадать на глаз.</p>
+      </div>
+      <div class="hero-graphic" aria-hidden="true">
+        <svg viewBox="0 0 320 320" width="320" height="320">
+          <circle cx="160" cy="160" r="30" class="ring ring-1"/>
+          <circle cx="160" cy="160" r="70" class="ring ring-2"/>
+          <circle cx="160" cy="160" r="115" class="ring ring-3"/>
+          <circle cx="160" cy="160" r="150" class="ring ring-4"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="methods" class="methods">
+    <div class="wrap">
+      <h2>Шесть методов</h2>
+      <p class="section-lead">Данные — стартовая точка. У каждого метода есть разумный диапазон, дальше вкус подстраивается под себя.</p>
+      <div id="methods-grid" class="methods-grid"></div>
+    </div>
+  </section>
+
+  <section id="calculator" class="calculator">
+    <div class="wrap">
+      <h2>Калькулятор пропорций</h2>
+      <p class="section-lead">Выбери метод и впиши воду или кофе — второе значение посчитается само.</p>
+
+      <div class="calc-card">
+        <label class="field">
+          <span>Метод</span>
+          <select id="calc-method"></select>
+        </label>
+
+        <div class="calc-inputs">
+          <label class="field">
+            <span>Вода, мл</span>
+            <input type="number" id="calc-water" min="0" step="1" placeholder="300">
+          </label>
+          <span class="calc-sep">:</span>
+          <label class="field">
+            <span>Кофе, г</span>
+            <input type="number" id="calc-coffee" min="0" step="0.1" placeholder="18.8">
+          </label>
+        </div>
+
+        <p class="calc-note" id="calc-note"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Учебный проект курса «Веб-программирование». Собрано на HTML, CSS и JS, размещено через GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
